@@ -10,7 +10,7 @@ if n * m < k:
     print("Шкоколадка слишком мала")
 elif n * m == k:
     print("Отламывать ничего не нужно")
-elif n * m - n >= k or n * m - m >= k:
+elif (n * m - n >= k or n * m - m >= k) and (n <= k or m <= k):
     print(f"Отломить {k} долек получиться")
 else:
     print(f"Отломить {k} долек не получиться")
