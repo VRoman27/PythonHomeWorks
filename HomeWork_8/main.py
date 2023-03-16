@@ -15,7 +15,7 @@
 # Пользователь также может ввести имя или фамилию, и Вы должны реализовать функционал для изменения и удаления данных
 
 from interface import *
-file_path = 'file.txt'
+file_path = 'HomeWork_8/file.txt'
 flag = True
 while(flag):
     flag = menuHello(file_path)

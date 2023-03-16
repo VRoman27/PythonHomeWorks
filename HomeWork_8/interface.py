@@ -1,6 +1,7 @@
 from show_data import *
 from find_data import *
 
+
 def menuHello(path):
     print("1.Добавить")
     print("2.Вывести всех")
@@ -20,15 +21,13 @@ def menuHello(path):
         return False
 
 def addData(path):
-    data = open(path, 'a')
-    print('\n'*100) 
+    data = open(path, 'a') 
     first_name = input("Введите имя: ")
     second_name = input("Введите фамилию: ")
     mid_name = input("Введите отчество: ")
-    number = input("Введите номер телефона")
+    number = input("Введите номер телефона: ")
     item = [first_name, second_name, mid_name, number]
     s = ' '
-    data.writelines(s.join(item) + '\n')
+    data.writelines(s.join(item) + ' \n')
     data.close()
-    print('\n'*100)
 
